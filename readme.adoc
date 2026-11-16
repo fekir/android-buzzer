@@ -38,3 +38,7 @@ Each effect stops when the button is released or cancelled, or the app loses foc
 On Android 8 and newer, enable "Accessibility volume control" using the button at the bottom of the app to adjust accessibility volume.
 
 Note that some device settings may suppress sound or vibration.
+
+== Logo
+
+The logo is a modification of the https://commons.wikimedia.org/wiki/File:Buzzer-IEC-Symbol.svg[Buzzer Symbol], under public domain.
