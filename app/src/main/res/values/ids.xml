@@ -1,0 +1,25 @@
+<resources>
+  <item type="id" name="buzz_button" />
+  <item type="id" name="custom_beep_button" />
+  <item type="id" name="sound_stream_group" />
+  <item type="id" name="stream_media" />
+  <item type="id" name="stream_alarm" />
+  <item type="id" name="stream_ring" />
+  <item type="id" name="stream_notification" />
+  <item type="id" name="stream_call" />
+  <item type="id" name="stream_system" />
+  <item type="id" name="stream_dtmf" />
+  <item type="id" name="stream_accessibility" />
+  <item type="id" name="sample_rate_input" />
+  <item type="id" name="period_input" />
+  <item type="id" name="amplitude_input" />
+  <item type="id" name="alarm_volume_slider" />
+  <item type="id" name="media_volume_slider" />
+  <item type="id" name="ringtone_volume_slider" />
+  <item type="id" name="notification_volume_slider" />
+  <item type="id" name="call_volume_slider" />
+  <item type="id" name="system_volume_slider" />
+  <item type="id" name="dtmf_volume_slider" />
+  <item type="id" name="accessibility_volume_slider" />
+  <item type="id" name="accessibility_permission_button" />
+</resources>

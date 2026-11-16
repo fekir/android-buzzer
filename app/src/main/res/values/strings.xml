@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">Buzzer</string>
+  <string name="buzz_button">Vibrate</string>
+  <string name="custom_beep_button">Custom beep</string>
+  <string name="sound_stream">Sound output stream</string>
+  <string name="sample_rate">Sample rate (Hz)</string>
+  <string name="wave_period">Period (samples)</string>
+  <string name="wave_amplitude">Amplitude (%)</string>
+  <string name="invalid_sample_rate">Enter a sample rate from 4000 to 192000 Hz.</string>
+  <string name="invalid_period">Enter an even period from 16 to 65536 samples.</string>
+  <string name="invalid_amplitude">Enter an amplitude from 0 to 100 percent.</string>
+  <string name="sound_unavailable">This device could not play the selected sound settings.</string>
+  <string name="alarm_volume">Alarm volume</string>
+  <string name="media_volume">Media volume</string>
+  <string name="ringtone_volume">Ring volume</string>
+  <string name="notification_volume">Notification volume</string>
+  <string name="call_volume">Call volume</string>
+  <string name="system_volume">System volume</string>
+  <string name="dtmf_volume">Dial pad</string>
+  <string name="accessibility_volume">Accessibility volume</string>
+  <string name="accessibility_service_name">Accessibility volume control</string>
+  <string name="accessibility_service_description">Allows the Buzzer app to adjust accessibility audio volume. Does not read screen content or observe interactions.</string>
+  <string name="enable_accessibility_volume">Enable accessibility volume</string>
+  <string name="disable_accessibility_volume">Disable accessibility volume</string>
+  <string name="volume_percentage">%1$s (%2$d%%)</string>
+  <string name="volume_restricted">Android restricted this volume change. Check system sound or Do Not Disturb settings.</string>
+</resources>

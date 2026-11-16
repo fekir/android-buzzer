@@ -1,0 +1,40 @@
+= Buzzer
+
+Small Android application for testing buzzer sound / vibration on different devices.
+On some devices it can be difficult to adjust sound settings and verify how loud a beep is.
+
+This application can change different volume settings and has an integrated buzzer for testing.
+
+ * works on Android 5 and newer versions
+ * minimal disk usage
+ * no advertisement
+ * free
+ * open source
+
+For those interested in the source code:
+
+ * source code is kept to a minimum
+ * builds completely offline, it does not download anything during the build and packaging process
+ * builds should be completely https://reproducible-builds.org/[reproducible]
+ * it does not use any external dependencies outside the standard libraries and Android API
+ * does not use `gradle` as build system, but `make` (execute `make apk` to create the `apk`)
+ * can be built on a "normal" Debian environment by installing the relevant packages from the official repository, no need to use something that has not been packaged
+
+For building an `.aab` you'll need to download https://developer.android.com/tools/bundletool#build_app_bundle[bundletool], it's the only tool I could not find packaged on Debian that is required for creating an `.aab`.
+At least it's just one https://github.com/google/bundletool/releases/[jar] file (`VERSION="1.18.3"; wget "https://github.com/google/bundletool/releases/download/${VERSION}/bundletool-all-${VERSION}.jar"`)
+
+For building the `.apk` it uses `aapt2`, and falls back to `aapt` if not present.
+Optimizing `.class` files with `proguard` is optional.
+It supports R8, D8 or DX (in this order) for creating `.dex` files.
+
+Use the target `build.gradle.kts` for creating a gradle project file that can be used by IDE for understanding better the code, it is not used by the make build system.
+
+Build with `make apk`; the APK is written to `build` and named `Buzzer.apk`.
+
+== Usage
+
+Each effect stops when the button is released or cancelled, or the app loses focus.
+
+On Android 8 and newer, enable "Accessibility volume control" using the button at the bottom of the app to adjust accessibility volume.
+
+Note that some device settings may suppress sound or vibration.
